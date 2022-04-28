@@ -33,12 +33,15 @@ body {
     position: absolute;
     margin-left: 200px;
     filter: invert(87%) sepia(7%) saturate(1907%) hue-rotate(109deg) brightness(88%) contrast(86%);
+    right: -1%;
+    margin-right: 10px;
 }
 
 .signup .alli {
     width: 80px;
+    margin-right: 10px;
     position: absolute;
-    margin-left: 120px;
+    right: -1%;
     filter: invert(87%) sepia(7%) saturate(1907%) hue-rotate(109deg) brightness(88%) contrast(86%);
 }
 
