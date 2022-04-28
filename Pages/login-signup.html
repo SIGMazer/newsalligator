@@ -79,7 +79,7 @@
                     </div>
                     <span class="date">Date of birth </span>
                     <div class="date-input">
-                        <select name="month" class="date-month">
+                        <select name="month" class="date-month" required>
                             <option >Month</option>
                             <option value="January">January</option>
                             <option value="February">February</option>
@@ -94,7 +94,7 @@
                             <option value="November">November</option>
                             <option value="December">December</option>
                         </select>
-                        <select name="day" class="date-day">
+                        <select name="day" class="date-day" required>
                             <option >Day</option>
                             <option >1</option>
                             <option >2</option>
@@ -129,22 +129,22 @@
                             <option >31</option>
                         </select>
 
-                        <input type="number" max="2022" min="1905" class="date-year" placeholder="year">
+                        <input type="number" max="2022" min="1905" class="date-year" placeholder="year" required>
                     </div>
                     <div class="gender">
                         <span>Gender</span>
-                        <input type="radio" class="male" id="male" name="gender">
+                        <input type="radio" class="male" id="male" name="gender" required="required">
                         <label for="male &nb ">Male  &nbsp;  &nbsp;</label>
-                        <input type="radio" class="female" id="female" name="gender">
+                        <input type="radio" class="female" id="female" name="gender" required="required">
                         <label for="female">Female  &nbsp; &nbsp; </label>
-                        <input type="radio" class="other" id="other" name="gender">
+                        <input type="radio" class="other" id="other" name="gender" required="required">
                         <label for="other">Other</label>
                     </div>
 
 
                     <div class="checkbox-text">
                         <div class="checkbox-content">
-                            <input type="checkbox" id="sigCheck">
+                            <input type="checkbox" id="sigCheck" required>
                             <label for="sigCheck" class="text">I agree to Terms and Conditions</label>
                         </div>
 

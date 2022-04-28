@@ -6,7 +6,7 @@ const container = document.querySelector(".container"),
 
 
 const pass = document.getElementById("sign-pass");
-const conPass = document.getElementById("sgin-con-pass")
+const conPass = document.getElementById("sign-con-pass")
 const form = document.getElementById("sgin-form");
 const error = document.getElementById("error")
 
@@ -63,28 +63,89 @@ let message = [];
 
 
 form.addEventListener("submit", (e) => {
+    var a = pass.value;
+    var b = conPass.value;
+
 
     if (pass.value.length < 8) {
         message.push("Password must be longer than 8 characters.");
+    } else {
+        for (var i = 0; i < message.length; i++) {
+
+            if (message[i] === "Password must be longer than 8 characters.") {
+
+                message.splice(i, 1);
+            }
+
+        }
     }
     if (pass.value == 'password') {
         message.push("Password cannot be password.")
+    } else {
+        for (var i = 0; i < message.length; i++) {
+
+            if (message[i] === "Password cannot be password.") {
+
+                message.splice(i, 1);
+            }
+
+        }
     }
 
     if (pass.value.search(/[a-z]/) == -1) {
         message.push("Password must contain a smail character.");
+    } else {
+        for (var i = 0; i < message.length; i++) {
+
+            if (message[i] === "Password must contain a smail character.") {
+
+                message.splice(i, 1);
+            }
+
+        }
     }
     if (pass.value.search(/[A-Z]/) == -1) {
         message.push("Password must contain a capital character.");
+    } else {
+        for (var i = 0; i < message.length; i++) {
+
+            if (message[i] === "Password must contain a capital character.") {
+
+                message.splice(i, 1);
+            }
+
+        }
     }
     if (pass.value.search(/[0-9]/) == -1) {
         message.push("Password must contain a number.");
+    } else {
+        for (var i = 0; i < message.length; i++) {
+
+            if (message[i] === "Password must contain a number.") {
+
+                message.splice(i, 1);
+            }
+
+        }
     }
     if (pass.value.search(/[!\@\#\$\%\^\&\*\(\)\-\_\=\+\\\/.\,\;\'\"\[\]{\}]/) == -1) {
         message.push("Password must contain a special character.");
+    } else {
+        for (var i = 0; i < message.length; i++) {
+
+            if (message[i] === "Password must contain a special character.") {
+
+                message.splice(i, 1);
+            }
+
+        }
     }
-    if (pass != conPass) {
-        message.push("Password does not match")
+
+
+    if (a != b) {
+        error.innerText = "Password does not match"
+    } else {
+        error.innerText = ""
     }
 
 
@@ -95,6 +156,6 @@ form.addEventListener("submit", (e) => {
         error.innerText = message.join(', ');
 
     }
-
+    message.length = 0;
 
 })
