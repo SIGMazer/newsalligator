@@ -143,9 +143,16 @@ form.addEventListener("submit", (e) => {
 
 
     if (a != b) {
-        error.innerText = "Password does not match"
+        message.push("Password does not match")
     } else {
-        error.innerText = ""
+        for (var i = 0; i < message.length; i++) {
+
+            if (message[i] === "Password does not match") {
+
+                message.splice(i, 1);
+            }
+
+        }
     }
 
 
