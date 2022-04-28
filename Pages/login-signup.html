@@ -1,0 +1,174 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">Login</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="../Stylesheets/login-signup.css">
+    <script defer src="../Scripts/login-sginup.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+
+                <span class="title">Login</span>
+                <img src="../Assets/alligatorLogo.png" class="alli">
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Login">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <b> <a href="#" style="color:#557B83;" class="text signup-link">&nbsp; Signup now</a>  </b>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+
+                <span class="title">Registration</span>
+                <img src="../Assets/alligatorLogo.png" class="alli">
+                <form action="#" id="sgin-form">
+                    <div class="input-field">
+                        <i class="uil uil-user"></i>
+                        <input type="text" placeholder="Username" required>
+
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Password" id="sign-pass" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirm a password" id="sign-con-pass" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+
+                    </div>
+                    <span class="date">Date of birth </span>
+                    <div class="date-input">
+                        <select name="month" class="date-month">
+                            <option >Month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select name="day" class="date-day">
+                            <option >Day</option>
+                            <option >1</option>
+                            <option >2</option>
+                            <option >3</option>
+                            <option >4</option>
+                            <option >5</option>
+                            <option >6</option>
+                            <option >7</option>
+                            <option >8</option>
+                            <option >9</option>
+                            <option >10</option>
+                            <option >11</option>
+                            <option >12</option>
+                            <option >13</option>
+                            <option >14</option>
+                            <option >15</option>
+                            <option >16</option>
+                            <option >17</option>
+                            <option >18</option>
+                            <option >19</option>
+                            <option >20</option>
+                            <option >21</option>
+                            <option >22</option>
+                            <option >23</option>
+                            <option >24</option>
+                            <option >25</option>
+                            <option >26</option>
+                            <option >27</option>
+                            <option >28</option>
+                            <option >29</option>
+                            <option >30</option>
+                            <option >31</option>
+                        </select>
+
+                        <input type="number" max="2022" min="1905" class="date-year" placeholder="year">
+                    </div>
+                    <div class="gender">
+                        <span>Gender</span>
+                        <input type="radio" class="male" id="male" name="gender">
+                        <label for="male &nb ">Male  &nbsp;  &nbsp;</label>
+                        <input type="radio" class="female" id="female" name="gender">
+                        <label for="female">Female  &nbsp; &nbsp; </label>
+                        <input type="radio" class="other" id="other" name="gender">
+                        <label for="other">Other</label>
+                    </div>
+
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="sigCheck">
+                            <label for="sigCheck" class="text">I agree to Terms and Conditions</label>
+                        </div>
+
+
+                    </div>
+                    <div class="error-msg">
+                        <p class="error" id="error"></p>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" id="sub" value="Register">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Already have an account
+                        <b><a href="#"style="color:#557B83;" class="text login-link"> &nbsp; login now</a></b>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

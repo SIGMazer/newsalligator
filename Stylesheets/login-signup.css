@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #253532;
+}
+
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #F9FBF0;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+.login .alli {
+    width: 80px;
+    position: absolute;
+    margin-left: 200px;
+    filter: invert(87%) sepia(7%) saturate(1907%) hue-rotate(109deg) brightness(88%) contrast(86%);
+}
+
+.signup .alli {
+    width: 80px;
+    position: absolute;
+    margin-left: 120px;
+    filter: invert(87%) sepia(7%) saturate(1907%) hue-rotate(109deg) brightness(88%) contrast(86%);
+}
+
+.container .forms {
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+    -webkit-transition: height 0.2s ease;
+    -moz-transition: height 0.2s ease;
+    -ms-transition: height 0.2s ease;
+    -o-transition: height 0.2s ease;
+}
+
+.container .form {
+    width: 50%;
+    padding: 30px;
+    background-color: #F9FBF0;
+    transition: margin-left 0.18s ease;
+}
+
+.container.active .login {
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup {
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+
+.container.active .signup {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.container.active .forms {
+    height: 900px;
+}
+
+.signup .date {
+    font-size: 18px;
+    color: black;
+    display: flex;
+    margin-top: 20px;
+    background-color: #F9FBF0;
+}
+
+.signup .date-input .date-month {
+    background-color: #F9FBF0;
+    color: black;
+    border: none;
+}
+
+.signup .date-input .date-day {
+    background-color: #F9FBF0;
+    color: black;
+    border: none;
+}
+
+.signup .date-year {
+    position: relative;
+    padding: 0;
+    margin-left: 10px;
+    background-color: #F9FBF0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    border-bottom: 2px solid rgb(109, 106, 106);
+    border-top: 2px solid transparent;
+}
+
+.signup .gender {
+    color: black;
+}
+
+.signup .gender span {
+    margin-top: 20px;
+    display: flex;
+}
+
+.container .form .title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+    color: black;
+}
+
+.form .input-field {
+    margin-top: 30px;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: #F9FBF0;
+}
+
+.input-field input {
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    background-color: #F9FBF0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid rgb(109, 106, 106);
+    border-top: 2px solid transparent;
+}
+
+.input-field input:is(:focus,
+:valid) {
+    border-bottom-color: #39AEA9;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    color: black;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+.input-field input:is(:focus,
+ :valid)~i {
+    color: #39AEA9;
+}
+
+.input-field i.icon {
+    left: 0;
+}
+
+.input-field i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.form .checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input {
+    margin: 0 8px -2px 4px;
+    accent-color: #253532;
+}
+
+.signup .checkbox-text .checkbox-content .text {
+    color: black;
+}
+
+.form .text {
+    color: black;
+    font-size: 14px;
+}
+
+.form a.text {
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form .button {
+    margin-top: 35px;
+}
+
+.form .button input {
+    border: none;
+    color: #000;
+    background-color: #557B83;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #557B83;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.button input:hover {
+    background-color: #39AEA9;
+}
+
+.form .login-signup {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.signup .error-msg p {
+    display: flex;
+    margin-top: 10px;
+    color: red;
+}
