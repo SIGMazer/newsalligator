@@ -7,6 +7,51 @@
     <link href="../Stylesheets/main-style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="../Scripts/main-functions.js"></script>
+    <style>
+        /*Headline classes*/
+        .headline__container {
+            text-align: center;
+        }
+        .headline__slide img {
+            width: 75%;
+            border-radius: 16px;
+        }
+        .headline__slide {
+            display: none;
+        }
+        .headline__slide h2 {
+            margin-top: 2px;
+            font-size: xx-large;
+        }
+        .headline__selector {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #557B83;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .headline__selector:hover {
+            background-color: #39AEA9;
+        }
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        /*Responsive margin switching for the headline slides*/
+        @media screen and (max-width: 800px) {
+            .headline__slide {
+                margin-left: 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <!--Navigation bar-->
@@ -16,14 +61,14 @@
             <button class="dropbtn">Categories<span class="material-symbols-outlined">arrow_drop_down</span></button>
             <div class="dropdown-content">
                 <a href="#"><span class="material-symbols-outlined">theater_comedy</span><p class="dropdown-context__text">Entertainment</p></a>
-                <a href="#"><span class="material-symbols-outlined">sports_soccer</span><p class="dropdown-context__text">Sport</p></a>
+                <a href="../Pages/allicat-sport.html"><span class="material-symbols-outlined">sports_soccer</span><p class="dropdown-context__text">Sport</p></a>
                 <a href="../Pages/allicat-science.html"><span class="material-symbols-outlined">science</span><p class="dropdown-context__text">Science</p></a>
                 <a href="#"><span class="material-symbols-outlined">memory</span><p class="dropdown-context__text">Tech</p></a>
                 <a href="#"><span class="material-symbols-outlined">attach_money</span><p class="dropdown-context__text">Economics</p></a>
                 <a href="#"><span class="material-symbols-outlined">public</span><p class="dropdown-context__text">World</p></a>
             </div>
         </div>
-        <a href="#User" style="float:right"><span class="material-symbols-outlined">account_circle</span><p class="dropdown-context__text">User</p></a>
+        <a href="#" style="float:right"><span class="material-symbols-outlined">account_circle</span><p class="dropdown-context__text">User</p></a>
         <a href="javascript:void(0);" class="icon" onclick="navBarFunction()"><span class="material-symbols-outlined">menu</span></a>
     </div>
 
@@ -32,8 +77,32 @@
         <!--Main Column-->
         <div class="column-main">
             <!--Moving headlines-->
-            <div class="card" id="headline">
-
+            <div class="card">
+                <div class="headline__container">
+                    <a href="#1" class="news-card__link">
+                        <div class="headline__slide fade">
+                            <img src="../Assets/Science-images/skullclimate.jpg" alt="Placeholder">
+                            <h2>Title1 goes here</h2>
+                        </div>
+                    </a>
+                    <a href="#2" class="news-card__link">
+                        <div class="headline__slide fade">
+                            <img src="../Assets/news-icon__placeholder.png" alt="Placeholder">
+                            <h2>Title2 goes here</h2>
+                        </div>
+                    </a>
+                    <a href="#3" class="news-card__link">
+                        <div class="headline__slide fade">
+                            <img src="../Assets/news-icon__placeholder.png" alt="Placeholder">
+                            <h2>Title3 goes here</h2>
+                        </div>
+                    </a>
+                </div>
+                <div style="text-align: center">
+                    <span class="headline__selector" onclick="setSlide(1,0)"></span>
+                    <span class="headline__selector" onclick="setSlide(2,0)"></span>
+                    <span class="headline__selector" onclick="setSlide(3,0)"></span>
+                </div>
             </div>
 
             <!--Other news cards-->
@@ -74,7 +143,7 @@
                 <ol class="trending-list">
                     <li><a href="#">Economics</a></li>
                     <li><a href="#">World</a></li>
-                    <li><a href="#">Sport</a></li>
+                    <li><a href="../Pages/allicat-sport.html">Sport</a></li>
                     <li><a href="#">Entertainment</a></li>
                 </ol>
             </div>
@@ -85,5 +154,8 @@
     <div class="footer">
         <p>News Alligator - 2022</p>
     </div>
+
+    <!--Show first slide-->
+    <script>setSlide(1,1);</script>
 </body>
 </html>

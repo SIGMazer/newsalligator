@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #253532;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    animation: fadein 0.5s;
+    margin-top: 1.5%;
+    width: 75%;
+    background-color: #F9FBF0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.card:after {
+    content: "";
+    clear: both;
+}
+
+.side {
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
+.button-start {
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+    background-color: #557B83;
+    text-decoration: none;
+    color: #F9FBF0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.button-start:hover {
+    background-color: #39AEA9;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul img {
+    border-radius: 50%;
+    border: #253532 solid 2px;
+    width: 10%;
+    margin-right: 16px;
+}
+
+ul a {
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #557B83;
+}
+
+ul a:hover {
+    color: #39AEA9;
+}
+
+.devs--name {
+    margin-bottom: 10px;
+}
+
+.alligator__logo {
+    filter: invert(87%) sepia(7%) saturate(1907%) hue-rotate(109deg) brightness(88%) contrast(86%);
+    margin-top: 35%;
+}
+
+@media screen and (max-width: 800px) {
+    .side {
+        width: 100%;
+    }
+    .card {
+        margin-top: 0;
+    }
+    .alligator__logo {
+        margin-top: 0;
+    }
+}
