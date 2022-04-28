@@ -72,19 +72,19 @@ form.addEventListener("submit", (e) => {
     }
 
     if (pass.value.search(/[a-z]/) == -1) {
-        message.push("password must contain a smail charachter.");
+        message.push("Password must contain a smail character.");
     }
     if (pass.value.search(/[A-Z]/) == -1) {
-        message.push("password must contain a capital character.");
+        message.push("Password must contain a capital character.");
     }
     if (pass.value.search(/[0-9]/) == -1) {
-        message.push("password must contain a number.");
+        message.push("Password must contain a number.");
     }
     if (pass.value.search(/[!\@\#\$\%\^\&\*\(\)\-\_\=\+\\\/.\,\;\'\"\[\]{\}]/) == -1) {
-        message.push("password must contain a special character.");
+        message.push("Password must contain a special character.");
     }
     if (pass != conPass) {
-        message.push("password does not match")
+        message.push("Password does not match")
     }
 
 
