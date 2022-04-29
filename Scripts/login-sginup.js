@@ -6,11 +6,9 @@ const container = document.querySelector(".container"),
 
 
 const pass = document.getElementById("sign-pass");
-const conPass = document.getElementById("sign-con-pass")
+const conPass = document.getElementById("sign-con-pass");
 const form = document.getElementById("sgin-form");
-const error = document.getElementById("error")
-
-
+const error = document.getElementById("error");
 
 // js show/hide password and change icon
 
@@ -158,6 +156,7 @@ form.addEventListener("submit", (e) => {
 
 
 
+
     if (message.length > 0) {
         e.preventDefault();
         error.innerText = message.join(', ');
@@ -166,3 +165,40 @@ form.addEventListener("submit", (e) => {
     message.length = 0;
 
 })
+
+// login page
+
+function tologin(e) {
+
+    var username = document.getElementById("sign-usr").value;
+    var pass = document.getElementById("sign-pass").value;
+
+
+    localStorage.setItem("usr", username)
+    localStorage.setItem("pass1", pass)
+
+}
+
+
+function loginf(e) {
+
+    var username = document.getElementById("log-usr").value;
+    var pass = document.getElementById("log-pass").value;
+    var m = document.getElementById("log-error");
+
+
+    var u = localStorage.getItem("usr")
+    var p = localStorage.getItem("pass1")
+
+
+    if (p == pass && u == username) {
+        m.innerText = ""
+        window.location.href = "../Pages/allimain.html";
+    } else {
+        m.innerText = "Username or password wrong"
+        event.preventDefault()
+    }
+
+
+
+}
