@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>News Alligator</title>
+    <link href="../Stylesheets/main-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="../Scripts/main-functions.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="topnav" id="myTopnav">
+        <a href="../Pages/allimain.html"><img src="../Assets/alligatorLogo.png" class="navbar__alligator-icon"></a>
+        <div class="dropdown">
+            <button class="dropbtn">Categories<span class="material-symbols-outlined">arrow_drop_down</span></button>
+            <div class="dropdown-content">
+                <a href="#"><span class="material-symbols-outlined">theater_comedy</span><p class="dropdown-context__text">Entertainment</p></a>
+                <a href="../Pages/allicat-sport.html"><span class="material-symbols-outlined">sports_soccer</span><p class="dropdown-context__text">Sport</p></a>
+                <a href="../Pages/allicat-science.html"><span class="material-symbols-outlined">science</span><p class="dropdown-context__text">Science</p></a>
+                <a href="#"><span class="material-symbols-outlined">memory</span><p class="dropdown-context__text">Tech</p></a>
+                <a href="#"><span class="material-symbols-outlined">attach_money</span><p class="dropdown-context__text">Economics</p></a>
+                <a href="#"><span class="material-symbols-outlined">public</span><p class="dropdown-context__text">World</p></a>
+            </div>
+        </div>
+        <a href="#" style="float:right"><span class="material-symbols-outlined">account_circle</span><p class="dropdown-context__text">User</p></a>
+        <a href="javascript:void(0);" class="icon" onclick="navBarFunction()"><span class="material-symbols-outlined">menu</span></a>
+    </div>
+
+    <!--Content-->
+    <div class="row">
+        <!--Main Column-->
+        <div class="column-main">
+            <!--Article card-->
+            <div class="card">
+                <div class="row">
+                    <div class="article-card__image-side">
+                        <img src="../Assets/tech-images/ps5.jpg" alt="Picture of Uranus">
+                        <h2>PS5 VRR Tests Show Massive FPS Gains in Certain Games like Spider-Man and Ratchet & Clank</h2>
+                        <p style="font-size: 12px; margin: 0;">From <b>wccftech.com</b>, by <b> Alessio Palumbo</b></p>
+                        <sub>28 APR 2022</sub>
+
+                    </div>
+                    <div class="article-card__info">
+                        <p>The highly anticipated PS5 VRR update went live a couple of days ago, finally allowing PlayStation 5 users to take advantage of their HDMI Variable Refresh Rate capable displays with PS5 games.</p>
+
+
+
+
+                        <p>YouTuber El Analista De Bits immediately set out to test how PS5 VRR works in practice. From the looks of it, variable refresh rate enables significant FPS uplifts in certain games with the unlocked frame rate.</p>
+
+
+
+                        <p>For example, Insomniac's Marvel's Spider-Man Remastered goes up to 96 FPS when set to the RT Performance Mode (rendered at dynamic 1440P resolution). Fidelity Mode, which runs at 4K resolution, also gets a significant boost from
+                            the locked 30FPS to an unlocked 50-59FPS, which will inevitably feel a lot smoother during gameplay.
+                        </p>
+
+
+                        <p>The follow-up Marvel's Spider-Man: Miles Morales shows a more modest boost, reaching up to 70 FPS or so with the unlocked frame rate in Performance Mode (dynamic 2160P) or RT Performance Mode (dynamic 1440P). This is likely due
+                            to the increased detail of the game which taxes the PS5 more than Spider-Man, which was originally conceived for the PlayStation 4.</p>
+
+
+                        <p>On the other hand, though, the PlayStation 5 exclusive Ratchet & Clank: Rift Apart received an enormous improvement with the PS5 VRR update, reaching up to 110 FPS once the frame rate is unlocked in RT Performance Mode. Fidelity
+                            Mode also gets a significant increase in frame per second, going near 60 FPS from the previously locked 30 FPS, though on average it hovers around 50 FPS. Unlike Marvel's Spider-Man: Miles Morales, Ratchet & Clank: Rift Apart
+                            is not an open world game, which is probably why it left more performance on the table without the PS5 VRR enabled.</p>
+
+
+                        <p>On the other hand, though, the PlayStation 5 exclusive Ratchet & Clank: Rift Apart received an enormous improvement with the PS5 VRR update, reaching up to 110 FPS once the frame rate is unlocked in RT Performance Mode. Fidelity
+                            Mode also gets a significant increase in frame per second, going near 60 FPS from the previously locked 30 FPS, though on average it hovers around 50 FPS. Unlike Marvel's Spider-Man: Miles Morales, Ratchet & Clank: Rift Apart
+                            is not an open world game, which is probably why it left more performance on the table without the PS5 VRR enabled.</p>
+
+                        <p>Resident Evil Village is apparently still locked at 60 frames per second for some reason, though El Analista De Bits says stuttering and input lag are both reduced with variable refresh rate enabled.
+                        </p>
+                        <p>Devil May Cry V Special Edition is, on the other hand, a great showcase example for PS5 VRR. The RT Graphics Mode (rendered at dynamic 1440P) goes up to 80 FPS (albeit with a lower average), while RT Performance Mode (rendered
+                            at 1080P) can reach up to 120 FPS in some instances.
+                        </p>
+                        <p>PS5 VRR can also be enabled system-wide on currently unsupported games, such as Fortnite and Cyberpunk 2077. However, as shown by HDTVTest's Vincent Teoh, both games are still locked at 60 frames per second, which inevitably limits
+                            the inherent benefits of variable refresh rate. Hopefully Epic and CD Projekt RED can let players unlock the frame rate with upcoming patches.</p>
+                        <p>Last but not least, Vincent Teoh also confirmed that the PlayStation 5's HDMI 2.1 bandwidth is still limited to 32 Gbps. As such, the PS5 will have to drop down the color chroma resolution from RGB 4:4:4 to YCbCr4:2:2. Users should
+                            ensure to set their displays to Limited rather than Auto or High to avoid black level mismatch and washed out colors.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Trending news column-->
+        <div class="column-side">
+            <div class="card" style="padding-left: 20px">
+                <h3>Trending Categories</h3>
+                <ol class="trending-list">
+                    <li><a href="#">Economics</a></li>
+                    <li><a href="#">World</a></li>
+                    <li><a href="../Pages/allicat-sport.html">Sport</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <p>News Alligator - 2022</p>
+    </div>
+
+    <!--Update username-->
+    <script>
+        updateUsername('dropdown__username');
+    </script>
+</body>
+
+</html>

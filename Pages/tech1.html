@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>News Alligator</title>
+    <link href="../Stylesheets/main-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="../Scripts/main-functions.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="topnav" id="myTopnav">
+        <a href="../Pages/allimain.html"><img src="../Assets/alligatorLogo.png" class="navbar__alligator-icon"></a>
+        <div class="dropdown">
+            <button class="dropbtn">Categories<span class="material-symbols-outlined">arrow_drop_down</span></button>
+            <div class="dropdown-content">
+                <a href="#"><span class="material-symbols-outlined">theater_comedy</span><p class="dropdown-context__text">Entertainment</p></a>
+                <a href="../Pages/allicat-sport.html"><span class="material-symbols-outlined">sports_soccer</span><p class="dropdown-context__text">Sport</p></a>
+                <a href="../Pages/allicat-science.html"><span class="material-symbols-outlined">science</span><p class="dropdown-context__text">Science</p></a>
+                <a href="#"><span class="material-symbols-outlined">memory</span><p class="dropdown-context__text">Tech</p></a>
+                <a href="#"><span class="material-symbols-outlined">attach_money</span><p class="dropdown-context__text">Economics</p></a>
+                <a href="#"><span class="material-symbols-outlined">public</span><p class="dropdown-context__text">World</p></a>
+            </div>
+        </div>
+        <a href="#" style="float:right"><span class="material-symbols-outlined">account_circle</span><p class="dropdown-context__text">User</p></a>
+        <a href="javascript:void(0);" class="icon" onclick="navBarFunction()"><span class="material-symbols-outlined">menu</span></a>
+    </div>
+
+    <!--Content-->
+    <div class="row">
+        <!--Main Column-->
+        <div class="column-main">
+            <!--Article card-->
+            <div class="card">
+                <div class="row">
+                    <div class="article-card__image-side">
+                        <img src="../Assets/tech-images/Unreal.png" alt="Picture of Uranus">
+                        <h2>Epic launches Unreal Engine 5</h2>
+                        <p style="font-size: 12px; margin: 0;">From <b>theverge.com</b>, by <b> Andrew Webster</b></p>
+                        <sub>5 APR 2022</sub>
+                        <p><em>The same tool behind that impressive Matrix demo.</em></p>
+                    </div>
+                    <div class="article-card__info">
+                        <p>Nearly two years after it was first announced, Epic Games has released its next-generation game engine. As part of a State of Unreal event today, the company revealed that Unreal Engine 5 is now available to download.</p>
+
+
+
+
+                        <p>The updated engine features a number of improvements for developers — including enhanced performance and an upgraded UI — but the most significant changes come from a handful of technologies designed for more photorealistic visuals.
+                            These include Lumen, “a fully dynamic global illumination solution” for more true-to-life lighting, and Nanite, which Epic says “gives you the ability to create games and experiences with massive amounts of geometric detail.”
+                            There are also more practical tools, like the ability to partition off sections of an open world to make it easier for teams to work on areas independently. Altogether, these tools are expected to make it easier to make large-scale
+                            games at a high fidelity; CD Projekt Red has already confirmed it’s using the tool to build the next Witcher.</p>
+
+
+
+                        <p>While this is the first time the engine is available widely for game developers, a few major UE5 projects have already been released to the public through Epic itself. Last December, Fortnite moved over to Unreal 5, and at the
+                            same time, Epic released The Matrix Awakens, an impressive tech demo that merged the likenesses of Keanu Reeves and Carrie-Anne Moss with a large open-world populated by the developer’s Metahuman characters.
+                        </p>
+
+
+                        <p>“It’s very good that we can experiment with the user experience flows way before anybody else does,” Epic CTO Kim Libreri tells The Verge. “So actually, it’s very valuable to our customers because it means they don’t have to go
+                            through that. We don’t end up putting super unthought-out workflows in front of all users. It’s great from that perspective, especially with something as big as the Matrix demo and as big as Fortnite.”</p>
+
+
+                        <p>As part of today’s launch of UE5, Epic is also making a sample of The Matrix Awakens’ city — sans the Hollywood stars — available for game developers to build off of. “I think we’re going to see some pretty awesome stuff,” Libreri
+                            says. Epic is also releasing a sample multiplayer shooter called Lyra, built in UE5, which looks a lot like Unreal Tournament and is something the developer says can be a “hands-on learning resource” for game creators.</p>
+
+
+                        <p>Outside of gaming, engines like Unreal have also become increasingly popular for other applications, most notably film and television. The Mandalorian, for instance, utilized Unreal for its virtual sets. With tools like UE5 and
+                            a new generation of gaming hardware, Libreri believes we’ll see more of this kind of crossover between mediums. In the past, he says, creators would build “movie quality assets” that would then have to be scaled down to be
+                            used in a game. Now those lines are starting to blur, opening up all kinds of possibilities.</p>
+
+                        <p>“It really means that across media boundaries, whether you’re making a movie, a TV show, or even doing an enterprise application, you don’t really have to think anywhere near as much about making that choice,” he explains. “Obviously,
+                            if you’re going to ship on on lower-end platforms, you still have to think about how many triangles are in the scene. But on the new generation of hardware, it absolutely is a game-changer. It’s totally feasible that a scene
+                            that’s made for a streaming show at Netflix or Disney — where they’ve basically used the highest resolution assets — there’s a chance now that stuff can turn up in a game or, as we head towards the future, show up in some metaverse
+                            experience.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Trending news column-->
+        <div class="column-side">
+            <div class="card" style="padding-left: 20px">
+                <h3>Trending Categories</h3>
+                <ol class="trending-list">
+                    <li><a href="#">Economics</a></li>
+                    <li><a href="#">World</a></li>
+                    <li><a href="../Pages/allicat-sport.html">Sport</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <p>News Alligator - 2022</p>
+    </div>
+
+    <!--Update username-->
+    <script>
+        updateUsername('dropdown__username');
+    </script>
+</body>
+
+</html>

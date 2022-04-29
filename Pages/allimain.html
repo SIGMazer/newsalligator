@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -9,20 +10,25 @@
     <script src="../Scripts/main-functions.js"></script>
     <style>
         /*Headline classes*/
+        
         .headline__container {
             text-align: center;
         }
+        
         .headline__slide img {
             width: 75%;
             border-radius: 16px;
         }
+        
         .headline__slide {
             display: none;
         }
+        
         .headline__slide h2 {
             margin-top: 2px;
             font-size: xx-large;
         }
+        
         .headline__selector {
             cursor: pointer;
             height: 15px;
@@ -33,19 +39,28 @@
             display: inline-block;
             transition: background-color 0.6s ease;
         }
-        .active, .headline__selector:hover {
+        
+        .active,
+        .headline__selector:hover {
             background-color: #39AEA9;
         }
         /* Fading animation */
+        
         .fade {
             animation-name: fade;
             animation-duration: 1.5s;
         }
+        
         @keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
         }
         /*Responsive margin switching for the headline slides*/
+        
         @media screen and (max-width: 800px) {
             .headline__slide {
                 margin-left: 0;
@@ -53,6 +68,7 @@
         }
     </style>
 </head>
+
 <body>
     <!--Navigation bar-->
     <div class="topnav" id="myTopnav">
@@ -63,7 +79,7 @@
                 <a href="#"><span class="material-symbols-outlined">theater_comedy</span><p class="dropdown-context__text">Entertainment</p></a>
                 <a href="../Pages/allicat-sport.html"><span class="material-symbols-outlined">sports_soccer</span><p class="dropdown-context__text">Sport</p></a>
                 <a href="../Pages/allicat-science.html"><span class="material-symbols-outlined">science</span><p class="dropdown-context__text">Science</p></a>
-                <a href="#"><span class="material-symbols-outlined">memory</span><p class="dropdown-context__text">Tech</p></a>
+                <a href="../Pages/allitech.html"><span class="material-symbols-outlined">memory</span><p class="dropdown-context__text">Tech</p></a>
                 <a href="#"><span class="material-symbols-outlined">attach_money</span><p class="dropdown-context__text">Economics</p></a>
                 <a href="#"><span class="material-symbols-outlined">public</span><p class="dropdown-context__text">World</p></a>
             </div>
@@ -107,33 +123,33 @@
 
             <!--Other news cards-->
             <a href="#" class="news-card__link">
-            <div class="card">
-                <div class="row">
-                    <div class="news-card__image-side">
-                        <img src="../Assets/news-icon__placeholder.png" alt="Alt-Text">
-                    </div>
-                    <div class="news-card__description">
-                        <h2>Title</h2>
-                        <p style="font-size: 12px; margin: 0;">By <b>Source</b>, in <b>Category</b></p>
-                        <p>Brief information goes here.</p>
+                <div class="card">
+                    <div class="row">
+                        <div class="news-card__image-side">
+                            <img src="../Assets/news-icon__placeholder.png" alt="Alt-Text">
+                        </div>
+                        <div class="news-card__description">
+                            <h2>Title</h2>
+                            <p style="font-size: 12px; margin: 0;">By <b>Source</b>, in <b>Category</b></p>
+                            <p>Brief information goes here.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </a>
 
             <a href="#" class="news-card__link">
-            <div class="card">
-                <div class="row">
-                    <div class="news-card__image-side">
-                        <img src="../Assets/news-icon__placeholder.png" alt="Alt-Text">
-                    </div>
-                    <div class="news-card__description">
-                        <h2>Title</h2>
-                        <p style="font-size: 12px; margin: 0;">By <b>Source</b>, in <b>Category</b></p>
-                        <p>Brief information goes here</p>
+                <div class="card">
+                    <div class="row">
+                        <div class="news-card__image-side">
+                            <img src="../Assets/news-icon__placeholder.png" alt="Alt-Text">
+                        </div>
+                        <div class="news-card__description">
+                            <h2>Title</h2>
+                            <p style="font-size: 12px; margin: 0;">By <b>Source</b>, in <b>Category</b></p>
+                            <p>Brief information goes here</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </a>
         </div>
         <!--Trending news column-->
@@ -156,6 +172,10 @@
     </div>
 
     <!--Show first slide and set user's name-->
-    <script>setSlide(1,1); updateUsername('dropdown__username');</script>
+    <script>
+        setSlide(1, 1);
+        updateUsername('dropdown__username');
+    </script>
 </body>
+
 </html>
