@@ -8,6 +8,10 @@ function navBarFunction() {
     }
 }
 
+function updateUsername(id) {
+    document.getElementById(id).innerHTML = localStorage.getItem("usr");
+}
+
 /*Headlines functionality*/
 let slideIndex = 1;
 let slideTimeOut = 0;

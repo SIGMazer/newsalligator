@@ -68,7 +68,7 @@
                 <a href="#"><span class="material-symbols-outlined">public</span><p class="dropdown-context__text">World</p></a>
             </div>
         </div>
-        <a href="#" style="float:right"><span class="material-symbols-outlined">account_circle</span><p class="dropdown-context__text">User</p></a>
+        <a href="#" style="float:right"><span class="material-symbols-outlined">account_circle</span><p class="dropdown-context__text" id="dropdown__username">User</p></a>
         <a href="javascript:void(0);" class="icon" onclick="navBarFunction()"><span class="material-symbols-outlined">menu</span></a>
     </div>
 
@@ -155,7 +155,7 @@
         <p>News Alligator - 2022</p>
     </div>
 
-    <!--Show first slide-->
-    <script>setSlide(1,1);</script>
+    <!--Show first slide and set user's name-->
+    <script>setSlide(1,1); updateUsername('dropdown__username');</script>
 </body>
 </html>
