@@ -59,14 +59,14 @@
 
                 <span class="title">Registration</span>
                 <img src="../Assets/alligatorLogo.png" class="alli">
-                <form action="#" id="sgin-form" onsubmit="tologin();">
+                <form action="#" id="sgin-form" onsubmit="tologin();" method="post">
                     <div class="input-field">
                         <i class="uil uil-user"></i>
                         <input type="text" placeholder="Username" id="sign-usr" required>
 
                     </div>
                     <div class="input-field">
-                        <input type="text" placeholder="Email" required>
+                        <input type="email" placeholder="Email" required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
@@ -82,7 +82,7 @@
                     <span class="date">Date of birth </span>
                     <div class="date-input">
                         <select name="month" class="date-month" required>
-                            <option >Month</option>
+                            <option value="" disabled selected>Month</option>
                             <option value="January">January</option>
                             <option value="February">February</option>
                             <option value="March">March</option>
@@ -97,7 +97,7 @@
                             <option value="December">December</option>
                         </select>
                         <select name="day" class="date-day" required>
-                            <option disabled selected >Day</option>
+                            <option value="" disabled selected>Day</option>
                             <option >1</option>
                             <option >2</option>
                             <option >3</option>
