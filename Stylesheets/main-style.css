@@ -152,8 +152,22 @@ body {
     color:inherit;
 }
 
-.news-card__link:hover h2{
+.news-card__link:hover {
     color:#39AEA9;
+}
+
+.news-card--hoverable {
+    text-decoration: none;
+    background-color: #F9FBF0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.news-card--hoverable:hover {
+    background-color: #557B83;
+    color: #F9FBF0;
 }
 
 .trending-list {
