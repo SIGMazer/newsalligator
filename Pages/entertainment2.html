@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>News Alligator</title>
+    <link href="../Stylesheets/main-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="../Scripts/main-functions.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="topnav" id="myTopnav">
+        <a href="../Pages/allimain.html"><img src="../Assets/alligatorLogo.png" class="navbar__alligator-icon"></a>
+        <div class="dropdown">
+            <button class="dropbtn">Categories<span class="material-symbols-outlined">arrow_drop_down</span></button>
+            <div class="dropdown-content">
+                <a href="#"><span class="material-symbols-outlined">theater_comedy</span><p class="dropdown-context__text">Entertainment</p></a>
+                <a href="../Pages/allicat-sport.html"><span class="material-symbols-outlined">sports_soccer</span><p class="dropdown-context__text">Sport</p></a>
+                <a href="../Pages/allicat-science.html"><span class="material-symbols-outlined">science</span><p class="dropdown-context__text">Science</p></a>
+                <a href="../Pages/allitech.html"><span class="material-symbols-outlined">memory</span><p class="dropdown-context__text">Tech</p></a>
+                <a href="#"><span class="material-symbols-outlined">attach_money</span><p class="dropdown-context__text">Economics</p></a>
+                <a href="#"><span class="material-symbols-outlined">public</span><p class="dropdown-context__text">World</p></a>
+            </div>
+        </div>
+        <a href="#" style="float:right"><span class="material-symbols-outlined">account_circle</span><p class="dropdown-context__text">User</p></a>
+        <a href="javascript:void(0);" class="icon" onclick="navBarFunction()"><span class="material-symbols-outlined">menu</span></a>
+    </div>
+
+    <!--Content-->
+    <div class="row">
+        <!--Main Column-->
+        <div class="column-main">
+            <!--Article card-->
+            <div class="card">
+                <div class="row">
+                    <div class="article-card__image-side">
+                        <img src="../Assets/entertainment-imges/breaking-bad.png" alt="Picture of rogue Legacy">
+                        <h2>BB the GREATEST</h2>
+                        <p style="font-size: 12px; margin: 0;">From <b>IMDB.com</b> <b> </b></p>
+                        <sub>10 OCT 2013</sub>
+                        <p><em>Since the devastating conclusion of Breaking Bad in 2013, it has widely been considered one of the best television shows of all time, as it remains the top-rated multi-season series on IMDb, ranking at 9.4. The show is a five-season long epic that spanned
+                            the final two years of Walter White's life- a mild-mannered Chemistry teacher turned meth kingpin.</em></p>
+                    </div>
+                    <div class="article-card__info">
+                        <p>
+                            Back in 2008, the hit TV show, Breaking Bad first aired on AMC. There were 5 seasons recorded spanning from 2008 to the final release in 2012. The plot follows the main character, Walter White, a nerdy high school chemistry teacher based in Albuquerque,
+                            New Mexico. After finding out about some misfortunes in his life, Walt finds himself at financial risk, causing stress among his family and wondering how they are going to make ends meet. One thing leads to the next and Walt
+                            finds himself joining forces with a former student of his, Jesse Pinkman, to cook methamphetamine (meth) in order to gain money to support his family. Throughout the show, we see Walt and Jesse work to create the “purest” form
+                            of meth that anyone in the world has seen. Because of this purity, the unlikely duo is extremely sought after ranging from the Mexican cartel to Walt’s brother-in-law who happens to be on a drug task force. As the seasons progress,
+                            we see Walt and Jesse work to become a powerful name in the drug world all while keeping their secrets hidden from their loved ones. If the plot hasn’t caught your attention, the characters for sure will. Walt, played by the
+                            famed Bryan Cranston, has some of the best character development I have ever seen in any television show. He goes from fearing his own shadow, to becoming a confident and confrontational man that is well known in the entire
+                            southwest of the United States. Aaron Paul, depicted by Jesse Pinkman, plays the complimentary character and did so well in his role that Netflix made a movie just about him called El Camino. In addition to the main characters,
+                            Breaking Bad brought together an incredible supporting cast ranging from Walt’s wife, Skylar, as well as the grungy, not-so-ethical lawyer Saul Goodman, who also got his own television series Better Call Saul because of his
+                            outstanding performance. This may seem like a stereotypical drama show that Netflix wants to throw out there for views. Some may even discount it because it is more than five years old. However, in its five seasons, Breaking
+                            Bad has won 110 awards, including multiple Emmy’s and Golden Globes, and had over 26 million streams in the week following its release. As mentioned before, the complimentary characters had their own television series and movies
+                            because of the success of the show. So, if you ever find yourself on another night scrolling through Netflix or any other streaming service for that matter, consider watching Breaking Bad. I promise, you will not be disappointed
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Trending news column-->
+        <div class="column-side">
+            <div class="card" style="padding-left: 20px">
+                <h3>Trending Categories</h3>
+                <ol class="trending-list">
+                    <li><a href="#">Economics</a></li>
+                    <li><a href="#">World</a></li>
+                    <li><a href="../Pages/allicat-sport.html">Sport</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <p>News Alligator - 2022</p>
+    </div>
+
+    <!--Update username-->
+    <script>
+        updateUsername('dropdown__username');
+    </script>
+</body>
+
+</html>
