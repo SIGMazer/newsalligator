@@ -169,6 +169,15 @@ body {
     color:#39AEA9;
 }
 
+.link {
+    color:#557B83;
+    text-decoration: none;
+}
+
+.link:hover {
+    color:#39AEA9;
+}
+
 /*Article classes*/
 .article-card__image-side {
     width: 35%;
