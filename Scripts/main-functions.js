@@ -8,6 +8,7 @@ function navBarFunction() {
     }
 }
 
+/*Updates the username*/
 function updateUsername(id) {
     document.getElementById(id).innerHTML = localStorage.getItem("usr");
 }
@@ -47,4 +48,15 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
     selector[slideIndex-1].className += " active";
+}
+
+/*Random article recommendation*/
+const titleArray = ["Ukraine war: World Bank warns of 'human catastrophe' food crisis", "Rogue Legacy 2 Review - Grand Lineage", "BB the GREATEST", "Uranus should be NASA’s top planetary target, influential report finds", "How ancient, recurring climate changes may have shaped human evolution", "UEFA CHAMPIONS WINNER: CHELSEA in incredible season, FINALLY won UEFA champions league trophy 2021", "Rafa Nadal places his 20th Grand Slam trophy in the Rafa Nadal Museum", "Epic launches Unreal Engine 5", "PS5 VRR Tests Show Massive FPS Gains in Certain Games like Spider-Man and Ratchet & Clank"];
+const linkArray = ["../Pages/economy2.html", "../Pages/entertainment1.html", "../Pages/entertainment2.html", "../Pages/science1.html", "../Pages/science2.html", "../Pages/sport1.html", "../Pages/sport2.html", "../Pages/tech1.html", "../Pages/tech2.html"];
+
+function articleRecommend(id) {
+    let arrayLength = linkArray.length;
+    let selectedIndex = Math.floor(Math.random() * arrayLength);
+    document.getElementById(id).innerHTML = titleArray[selectedIndex];
+    document.getElementById(id).href = linkArray[selectedIndex];
 }

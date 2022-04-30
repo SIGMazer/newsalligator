@@ -180,12 +180,13 @@ body {
         display: none;
     }
     /*Expand all cards*/
-    .column-side, .column-main, .news__block{
+    .column-side, .column-main{
         width: 100%;
         padding: 0;
     }
     .news__block {
-        padding-top: 10px;
+        width: 100%;
+        padding: 10px;
     }
     /*Responsive navbar-class*/
     .topnav.responsive {position: relative;}
