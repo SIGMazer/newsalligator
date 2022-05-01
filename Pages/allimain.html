@@ -72,16 +72,16 @@
 <body>
     <!--Navigation bar-->
     <div class="topnav" id="myTopnav">
-        <a href="../Pages/allimain.html"><img src="../Assets/alligatorLogo.png" class="navbar__alligator-icon"></a>
+        <a href="../Pages/allimain.html" title="News Alligator"><img src="../Assets/alligatorLogo.png" class="navbar__alligator-icon"></a>
         <div class="dropdown">
-            <button class="dropbtn">Categories<span class="material-symbols-outlined">arrow_drop_down</span></button>
+            <button class="dropbtn" onclick="location.href = '../Pages/allicat-list.html'" style="cursor:pointer">Categories<span class="material-symbols-outlined">arrow_drop_down</span></button>
             <div class="dropdown-content">
                 <a href="../Pages/allicat-entertainment.html"><span class="material-symbols-outlined">theater_comedy</span><p class="dropdown-context__text">Entertainment</p></a>
                 <a href="../Pages/allicat-sport.html"><span class="material-symbols-outlined">sports_soccer</span><p class="dropdown-context__text">Sport</p></a>
                 <a href="../Pages/allicat-science.html"><span class="material-symbols-outlined">science</span><p class="dropdown-context__text">Science</p></a>
                 <a href="../Pages/allitech.html"><span class="material-symbols-outlined">memory</span><p class="dropdown-context__text">Tech</p></a>
-                <a href="#"><span class="material-symbols-outlined">attach_money</span><p class="dropdown-context__text">Economy</p></a>
-                <a href="#"><span class="material-symbols-outlined">public</span><p class="dropdown-context__text">World</p></a>
+                <a href="../Pages/allicat-eco.html"><span class="material-symbols-outlined">attach_money</span><p class="dropdown-context__text">Economy</p></a>
+                <a href="../Pages/allicat-world.html"><span class="material-symbols-outlined">public</span><p class="dropdown-context__text">World</p></a>
             </div>
         </div>
         <a href="#" style="float:right"><span class="material-symbols-outlined">account_circle</span><p class="dropdown-context__text" id="dropdown__username">User</p></a>
@@ -95,22 +95,22 @@
             <!--Moving headlines-->
             <div class="card">
                 <div class="headline__container">
-                    <a href="#1" class="news-card__link">
+                    <a href="../Pages/World1.html" class="news-card__link" title="Angelina Jolie visits residents at boarding school and medical institution in Ukraine">
                         <div class="headline__slide fade">
-                            <img src="../Assets/Science-images/skullclimate.jpg" alt="Placeholder">
-                            <h2>Title1 goes here</h2>
+                            <img src="../Assets/World-images/aj.jpg" alt="Picture of Angelina Jolie hugging 3 children">
+                            <h2>Angelina Jolie visits residents at boarding school and medical institution in Ukraine</h2>
                         </div>
                     </a>
-                    <a href="#2" class="news-card__link">
+                    <a href="../Pages/entertainment2.html" class="news-card__link" title="BB the GREATEST">
                         <div class="headline__slide fade">
-                            <img src="../Assets/news-icon__placeholder.png" alt="Placeholder">
-                            <h2>Title2 goes here</h2>
+                            <img src="../Assets/entertainment-imges/breaking-bad.png" alt="Picture of Breaking Bad poster">
+                            <h2>BB the GREATEST</h2>
                         </div>
                     </a>
-                    <a href="#3" class="news-card__link">
+                    <a href="../Pages/Economy1.html.html" class="news-card__link" title="Elon Musk sells $8.5 billion worth of Tesla shares">
                         <div class="headline__slide fade">
-                            <img src="../Assets/news-icon__placeholder.png" alt="Placeholder">
-                            <h2>Title3 goes here</h2>
+                            <img src="../Assets/Economy-images/Elon.webp" alt="Picture of Elon Musk">
+                            <h2>Elon Musk sells $8.5 billion worth of Tesla shares</h2>
                         </div>
                     </a>
                 </div>
@@ -122,33 +122,33 @@
             </div>
 
             <!--Other news cards-->
-            <a href="#" style="color:inherit;">
+            <a href="#" style="color:inherit;" title="PS5 VRR Tests Show Massive FPS Gains in Certain Games like Spider-Man and Ratchet & Clank">
                 <div class="news-card--hoverable">
                     <div class="row">
                         <div class="news-card__image-side">
-                            <img src="../Assets/news-icon__placeholder.png" alt="Alt-Text">
+                            <img src="../Assets/tech-images/ps5.jpg" alt="Picture of PS5" title="Picture of PS5">
                         </div>
                         <div class="news-card__description">
-                            <h2>Title goes here</h2>
-                            <p style="font-size: 12px; margin: 0;">From <b>Source</b>, by <b>Author</b></p>
-                            <sub>DD MTH YEAR</sub>
-                            <p>Quick description.</p>
+                            <h2>PS5 VRR Tests Show Massive FPS Gains in Certain Games like Spider-Man and Ratchet & Clank</h2>
+                            <p style="font-size: 12px; margin: 0;">From <b>wccftech.com</b>, by <b> Alessio Palumbo</b></p>
+                            <sub>28 APR 2022</sub>
+                            <p>The highly anticipated PS5 VRR update went live a couple of days ago, finally allowing PlayStation 5 users to take advantage of their HDMI Variable Refresh Rate capable displays with PS5 games.</p>
                         </div>
                     </div>
                 </div>
             </a>
 
-            <a href="#" style="color:inherit;">
+            <a href="#" style="color:inherit;" title="Uranus should be NASA’s top planetary target, influential report finds">
                 <div class="news-card--hoverable">
                     <div class="row">
                         <div class="news-card__image-side">
-                            <img src="../Assets/news-icon__placeholder.png" alt="Alt-Text">
+                            <img src="../Assets/Science-images/uranusdecadal.jpg" alt="Picture of Uranus" title="Picture of Uranus">
                         </div>
                         <div class="news-card__description">
-                            <h2>Title goes here</h2>
-                            <p style="font-size: 12px; margin: 0;">From <b>Source</b>, by <b>Author</b></p>
-                            <sub>DD MTH YEAR</sub>
-                            <p>Quick description.</p>
+                            <h2>Uranus should be NASA’s top planetary target, influential report finds</h2>
+                            <p style="font-size: 12px; margin: 0;">From <b>Science.org</b>, by <b>Paul Voosen</b></p>
+                            <sub>19 APR 2022</sub>
+                            <p>“Decadal survey” recommends $4.2 billion flagship mission to the ice giant.</p>
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                 <h3>Trending Categories</h3>
                 <ol class="trending-list">
                     <li><a href="../Pages/allicat-eco.html">Economy</a></li>
-                    <li><a href="..Pages/allicat-world.html">World</a></li>
+                    <li><a href="../Pages/allicat-world.html">World</a></li>
                     <li><a href="../Pages/allicat-sport.html">Sport</a></li>
                     <li><a href="../Pages/allicat-entertainment.html">Entertainment</a></li>
                 </ol>

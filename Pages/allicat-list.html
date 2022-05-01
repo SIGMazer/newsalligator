@@ -10,15 +10,15 @@
 </head>
 <body>
 <div class="topnav" id="myTopnav">
-    <a href="../Pages/allimain.html"><img src="../Assets/alligatorLogo.png" class="navbar__alligator-icon"></a>
-    <a href="#User" style="float:right"><span class="material-symbols-outlined">account_circle</span><p class="dropdown-context__text">User</p></a>
+    <a href="../Pages/allimain.html" title="News Alligator"><img src="../Assets/alligatorLogo.png" class="navbar__alligator-icon"></a>
+    <a href="#" style="float:right"><span class="material-symbols-outlined">account_circle</span><p class="dropdown-context__text" id="dropdown__username">User</p></a>
     <a href="javascript:void(0);" class="icon" onclick="navBarFunction()"><span class="material-symbols-outlined">menu</span></a>
 </div>
 
 <div class="catlist">
     <table>
             <td class="responsive">
-                <a href="../Pages/alli-sport.html">
+                <a href="../Pages/allicat-sport.html" title="Sports Category">
             <table class="cat-card">
                 <td class="cat-pic"><img src="../Assets/Sports-images/football.jpg"></td>
                 <td class="catitles"><h3>Sports</h3></td>
@@ -26,7 +26,7 @@
             </td>
         </a>
             <td class="responsive">
-                <a href="../Pages/allicat-entertainment.html">
+                <a href="../Pages/allicat-entertainment.html" title="Entertainment Category">
             <table class="cat-card">
                 <td class="cat-pic"><img src="../Assets/Entertainment-images/entertainment.jpg" class="catograph"></td>
                 <td class="catitles"><h3 id="ent">Entertainment</h3></td>
@@ -35,15 +35,15 @@
         </a>
         <tr>
                 <td class="responsive">
-                    <a href="../Pages/allitech.html">
+                    <a href="../Pages/allitech.html" title="Tech Category">
                 <table class="cat-card">
-                    <td class="cat-pic"><img src="../Assets/Tech-images/board.jpg" class="catograph"></td>
+                    <td class="cat-pic"><img src="../Assets/tech-images/board.jpg" class="catograph"></td>
                     <td class="catitles"><h3>Tech</h3></td>
                 </table>
                 </td>
             </a>
                 <td class="responsive">
-                    <a href="../Pages/allicat-science">
+                    <a href="../Pages/allicat-science.html" title="Sports Category">
                 <table class="cat-card">
                     <td class="cat-pic"><img src="../Assets/Science-images/sciounce.jpg" class="catograph"></td>
                     <td class="catitles"><h3>Science</h3></td>
@@ -53,7 +53,7 @@
         </tr>
         <tr>
                 <td class="responsive">
-                    <a href="../Pages/allicat-eco.html">
+                    <a href="../Pages/allicat-eco.html" title="Economy Category">
                 <table class="cat-card">
                     <td class="cat-pic"><img src="../Assets/Economy-images/boom.jpg" class="catograph"></td>
                     <td class="catitles"><h3>Economy</h3></td>
@@ -62,7 +62,7 @@
             </a>
 
                 <td class="responsive">
-                    <a href="../Pages/allicat-world.html">
+                    <a href="../Pages/allicat-world.html" title="World Category">
                 <table class="cat-card">
                     <td class="cat-pic"><img src="../Assets/World-images/earf (2).jpg" class="catograph"></td>
                     <td class="catitles"><h3>World</h3></td>
@@ -75,6 +75,8 @@
 <div class="footer">
     <p>News Alligator - 2022</p>
 </div>
-
+<script>
+    updateUsername('dropdown__username');
+</script>
 </body>
 </html>

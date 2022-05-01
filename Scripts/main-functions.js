@@ -51,8 +51,8 @@ function showSlides(n) {
 }
 
 /*Random article recommendation*/
-const titleArray = ["Ukraine war: World Bank warns of 'human catastrophe' food crisis", "Rogue Legacy 2 Review - Grand Lineage", "BB the GREATEST", "Uranus should be NASA’s top planetary target, influential report finds", "How ancient, recurring climate changes may have shaped human evolution", "UEFA CHAMPIONS WINNER: CHELSEA in incredible season, FINALLY won UEFA champions league trophy 2021", "Rafa Nadal places his 20th Grand Slam trophy in the Rafa Nadal Museum", "Epic launches Unreal Engine 5", "PS5 VRR Tests Show Massive FPS Gains in Certain Games like Spider-Man and Ratchet & Clank"];
-const linkArray = ["../Pages/economy2.html", "../Pages/entertainment1.html", "../Pages/entertainment2.html", "../Pages/science1.html", "../Pages/science2.html", "../Pages/sport1.html", "../Pages/sport2.html", "../Pages/tech1.html", "../Pages/tech2.html"];
+const titleArray = ["Rogue Legacy 2 Review - Grand Lineage","BB the GREATEST","UEFA CHAMPIONS WINNER: CHELSEA in incredible season, FINALLY won UEFA champions league trophy 2021","Rafa Nadal places his 20th Grand Slam trophy in the Rafa Nadal Museum","Uranus should be NASA’s top planetary target, influential report finds","How ancient, recurring climate changes may have shaped human evolution","PS5 VRR Tests Show Massive FPS Gains in Certain Games like Spider-Man and Ratchet & Clank","Epic launches Unreal Engine 5","Elon Musk sells $8.5 billion worth of Tesla shares","Ukraine war: World Bank warns of 'human catastrophe' food crisis","Angelina Jolie visits residents at boarding school and medical institution in Ukraine","Can Sri Lanka dig itself out of a $50 billion debt?"];
+const linkArray = ["../Pages/entertainment1.html","../Pages/entertainment2.html","../Pages/sport1.html","../Pages/sport2.html","../Pages/science1.html","../Pages/science2.html","../Pages/tech2.html","../Pages/tech1.html","../Pages/Economy1.html","../Pages/economy2.html","../Pages/World1.html","../Pages/World2.html"];
 
 function articleRecommend(id) {
     let arrayLength = linkArray.length;

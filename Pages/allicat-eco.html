@@ -11,9 +11,9 @@
 <body>
 <!--Navigation bar-->
 <div class="topnav" id="myTopnav">
-  <a href="../Pages/allimain.html"><img src="../Assets/alligatorLogo.png" class="navbar__alligator-icon"></a>
+  <a href="../Pages/allimain.html" title="News Alligator"><img src="../Assets/alligatorLogo.png" class="navbar__alligator-icon"></a>
   <div class="dropdown">
-    <button class="dropbtn">Categories<span class="material-symbols-outlined">arrow_drop_down</span></button>
+    <button class="dropbtn" onclick="location.href = '../Pages/allicat-list.html'" style="cursor:pointer">Categories<span class="material-symbols-outlined">arrow_drop_down</span></button>
     <div class="dropdown-content">
       <a href="../Pages/allicat-entertainment.html"><span class="material-symbols-outlined">theater_comedy</span><p class="dropdown-context__text">Entertainment</p></a>
       <a href="../Pages/allicat-sport.html"><span class="material-symbols-outlined">sports_soccer</span><p class="dropdown-context__text">Sport</p></a>
@@ -32,26 +32,26 @@
   <h2><span class="material-symbols-outlined">attach_money</span> Latest in Economy</h2>
   <div class="column-main">
     <div class="row">
-      <a href="../Pages/Economy1.html" style="color:inherit;">
+      <a href="../Pages/Economy1.html" style="color:inherit;" title="Elon Musk sells $8.5 billion worth of Tesla shares">
         <div class="news__block">
           <div class="news__block__img">
-            <img src="../Assets/Economy-images/Elon.webp">
+            <img src="../Assets/Economy-images/Elon.webp" alt="Picture of Elon Musk" title="Picture of Elon Musk">
           </div>
           <h2>Elon Musk sells $8.5 billion worth of Tesla shares</h2>
           <p style="font-size: 12px; margin: 0;">From <strong>cnn.com</strong>, by <strong>Chris Isidore</strong></p>
           <sub>29 APR 2022</sub>
-          <p><em>"Tesla CEO Elon Musk sold $8.5 billion of the electric automaker's stock in the three days after the Twitter board agreed to sell the company to him."</em></p>
+          <p>"Tesla CEO Elon Musk sold $8.5 billion of the electric automaker's stock in the three days after the Twitter board agreed to sell the company to him."</p>
         </div>
       </a>
-      <a href="#" style="color:inherit;">
+      <a href="../Pages/economy2.html" style="color:inherit;" title="Ukraine war: World Bank warns of 'human catastrophe' food crisis">
         <div class="news__block">
           <div class="news__block__img">
-            <img src="../Assets/news-icon__placeholder.png">
+            <img src="../Assets/Economy-images/wheatukraine.jpg" alt="Picture of a combine harvester in a wheat field" title="Picture of a combine harvester in a wheat field">
           </div>
-          <h2>Title goes here</h2>
-          <p style="font-size: 12px; margin: 0;">From <b>Source</b>, by <b>Author</b></p>
-          <sub>DD MTH YEAR</sub>
-          <p>Quick description.</p>
+          <h2>Ukraine war: World Bank warns of 'human catastrophe' food crisis</h2>
+          <p style="font-size: 12px; margin: 0;">From <b>BBC.com</b></p>
+          <sub>21 APR 2022</sub>
+          <p>The world faces a "human catastrophe" from a food crisis arising from Russia's invasion of Ukraine, World Bank president David Malpass has said.</p>
         </div>
       </a>
     </div>
@@ -61,7 +61,7 @@
       <h3>Trending Categories</h3>
       <ol class="trending-list">
         <li><a href="../Pages/allicat-eco.html">Economy</a></li>
-        <li><a href="..Pages/allicat-world.html">World</a></li>
+        <li><a href="../Pages/allicat-world.html">World</a></li>
         <li><a href="../Pages/allicat-sport.html">Sport</a></li>
         <li><a href="../Pages/allicat-entertainment.html">Entertainment</a></li>
       </ol>
