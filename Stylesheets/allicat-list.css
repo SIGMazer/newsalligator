@@ -212,3 +212,84 @@ body {
         display: block;
     }
 }
+/******************************************* TABLE ELEMENTS *****************************************/
+    img {
+        width: 100%;
+        height:100% ;
+        border-radius: 5%;
+    }
+    .catograph
+    {
+        min-width: 200px;
+        min-height: 100 px;
+    }
+    .cat-card {
+        text-align: center;
+        background-color: #F9FBF0;
+        border-radius: 10px;
+        vertical-align: center;
+        horiz-align: left;
+        width: 100%;
+        border-collapse: collapse;
+        padding: 5%;
+        margin-bottom: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+    }
+    td {
+        text-align: left;
+
+    }
+    h3 {
+        text-align: center;
+        /*float: left;*/
+        vertical-align:center;
+        horiz-align: left;
+    }
+    .catlist{
+        width: 100%;
+        height: 100%;
+        float: top;
+    }
+    .cat-card:hover {
+        background-color: #557B83;
+        color: #F9FBF0;
+        box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+    }
+    .catitles {
+        font-size: 200%;
+        /*float: snap;*/
+    }
+    .cat-pic {
+        width: 50%;
+        height: 50%;
+    }
+    #ent {
+        font-size: x-large;
+    }
+    a:link
+    {
+        text-decoration: none;
+        color: black;
+    }
+    a:visited
+    {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover
+    {
+        text-decoration: none;
+        color: black;
+    }
+    a:active
+    {
+        text-decoration: none;
+        color: black;
+    }
+    @media screen and (max-width: 800px){
+        .responsive {
+            display: block;
+        }
+    }
