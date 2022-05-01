@@ -22,11 +22,11 @@
                 <img src="../Assets/alligatorLogo.png" class="alli">
                 <form action="#" id="log-form">
                     <div class="input-field">
-                        <input type="text" placeholder="Username" id="log-usr" required>
+                        <input type="text" placeholder="Username" id="log-usr" title="Please enter your username." required>
                         <i class="uil uil-user icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Password" id="log-pass" required>
+                        <input type="password" class="password" placeholder="Password" id="log-pass" title="Please enter your password." required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
@@ -43,7 +43,7 @@
                         <p class="logerror" id="log-error"></p>
                     </div>
                     <div class="input-field button">
-                        <input type="button" value="Login" onclick="loginf()">
+                        <input type="button" value="Login" onclick="loginf()" title="Login">
                     </div>
                 </form>
 
@@ -62,19 +62,19 @@
                 <form action="#" id="sgin-form" onsubmit="tologin();">
                     <div class="input-field">
                         <i class="uil uil-user"></i>
-                        <input type="text" placeholder="Username" id="sign-usr" required>
+                        <input type="text" placeholder="Username" id="sign-usr" title="Please enter your username." required>
 
                     </div>
                     <div class="input-field">
-                        <input type="email" placeholder="Email" required>
+                        <input type="email" placeholder="Email" title="Please enter your email." required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Password" id="sign-pass" required>
+                        <input type="password" class="password" placeholder="Password" id="sign-pass" title="Please enter your password: First letter should be capital, must contain a special character, must be longer than 8 characters" required>
                         <i class="uil uil-lock icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Confirm a password" id="sign-con-pass" required>
+                        <input type="password" class="password" placeholder="Confirm password" id="sign-con-pass" title="Please re-enter your password, it must be matching." required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
 
@@ -154,7 +154,7 @@
                     </div>
 
                     <div class="input-field button">
-                        <input type="submit" id="sub" value="Register">
+                        <input type="submit" id="sub" value="Register" title="Register">
                     </div>
 
                 </form>
