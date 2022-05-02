@@ -67,90 +67,28 @@ form.addEventListener("submit", (e) => {
 
     if (pass.value.length < 8) {
         message.push("Password must be longer than 8 characters.");
-    } else {
-        for (var i = 0; i < message.length; i++) {
-
-            if (message[i] === "Password must be longer than 8 characters.") {
-
-                message.splice(i, 1);
-            }
-
-        }
     }
     if (pass.value == 'password') {
         message.push("Password cannot be password.")
-    } else {
-        for (var i = 0; i < message.length; i++) {
-
-            if (message[i] === "Password cannot be password.") {
-
-                message.splice(i, 1);
-            }
-
-        }
     }
 
     if (pass.value.search(/[a-z]/) == -1) {
         message.push("Password must contain a smail character.");
-    } else {
-        for (var i = 0; i < message.length; i++) {
-
-            if (message[i] === "Password must contain a smail character.") {
-
-                message.splice(i, 1);
-            }
-
-        }
     }
     if (pass.value.search(/[A-Z]/) == -1) {
         message.push("Password must contain a capital character.");
-    } else {
-        for (var i = 0; i < message.length; i++) {
-
-            if (message[i] === "Password must contain a capital character.") {
-
-                message.splice(i, 1);
-            }
-
-        }
     }
     if (pass.value.search(/[0-9]/) == -1) {
         message.push("Password must contain a number.");
-    } else {
-        for (var i = 0; i < message.length; i++) {
-
-            if (message[i] === "Password must contain a number.") {
-
-                message.splice(i, 1);
-            }
-
-        }
     }
     if (pass.value.search(/[!\@\#\$\%\^\&\*\(\)\-\_\=\+\\\/.\,\;\'\"\[\]{\}]/) == -1) {
         message.push("Password must contain a special character.");
-    } else {
-        for (var i = 0; i < message.length; i++) {
-
-            if (message[i] === "Password must contain a special character.") {
-
-                message.splice(i, 1);
-            }
-
-        }
     }
+
 
 
     if (a != b) {
         message.push("Password does not match")
-    } else {
-        for (var i = 0; i < message.length; i++) {
-
-            if (message[i] === "Password does not match") {
-
-                message.splice(i, 1);
-            }
-
-        }
     }
 
 
