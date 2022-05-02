@@ -73,7 +73,7 @@ form.addEventListener("submit", (e) => {
     }
 
     if (pass.value.search(/[a-z]/) == -1) {
-        message.push("Password must contain a smail character.");
+        message.push("Password must contain a small character.");
     }
     if (pass.value.search(/[A-Z]/) == -1) {
         message.push("Password must contain a capital character.");
