@@ -65,7 +65,7 @@ form.addEventListener("submit", (e) => {
     var b = conPass.value;
 
 
-    if (pass.value.length < 8) {
+    if (pass.value.length < 9) {
         message.push("Password must be longer than 8 characters.");
     }
     if (pass.value == 'password') {
