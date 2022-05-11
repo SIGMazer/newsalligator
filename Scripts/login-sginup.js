@@ -54,10 +54,23 @@ login.addEventListener("click", () => {
 
 
 
-//Password Validation
+//Password Validation + regester localstoreg
+
+
 let message = [];
+var flag = 1;
 
+function tologin(e) {
 
+    var username = document.getElementById("sign-usr").value;
+    var pass = document.getElementById("sign-pass").value;
+
+    if (flag) {
+        localStorage.setItem("usr", username)
+        localStorage.setItem("pass1", pass)
+    }
+
+}
 
 
 form.addEventListener("submit", (e) => {
@@ -98,24 +111,20 @@ form.addEventListener("submit", (e) => {
     if (message.length > 0) {
         e.preventDefault();
         error.innerText = message.join(', ');
+        flag = 0
 
+    } else {
+        flag = 1;
     }
     message.length = 0;
+
+    tologin();
 
 })
 
 // login page
 
-function tologin(e) {
 
-    var username = document.getElementById("sign-usr").value;
-    var pass = document.getElementById("sign-pass").value;
-
-
-    localStorage.setItem("usr", username)
-    localStorage.setItem("pass1", pass)
-
-}
 
 
 function loginf(e) {
@@ -140,4 +149,3 @@ function loginf(e) {
 
 
 }
-// poopy
