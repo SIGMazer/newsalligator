@@ -216,6 +216,13 @@ body {
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
     }
+    /*Categories dropdown/hover doesn't work on mobile*/
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    #dropdown-arrow {
+        font-size: 0;
+    }
     /*Expand all cards*/
     .column-main, .column-side, .news-card__image-side, .news-card__description, .article-card__image-side, .article-card__info{
         width: 100%;
