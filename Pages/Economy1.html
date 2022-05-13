@@ -13,21 +13,21 @@
 
 <body>
 <!--Navigation bar-->
-<div class="topnav" id="myTopnav">
-    <a href="../Pages/allimain.html" title="News Alligator"><img src="../Assets/alligatorLogo.png" class="navbar__alligator-icon"></a>
-    <div class="dropdown">
-        <button class="dropbtn" onclick="location.href = '../Pages/allicat-list.html'" style="cursor:pointer">Categories<span class="material-symbols-outlined" id="dropdown-arrow">arrow_drop_down</span></button>
-        <div class="dropdown-content">
-            <a href="../Pages/allicat-entertainment.html"><span class="material-symbols-outlined">theater_comedy</span><p class="dropdown-context__text">Entertainment</p></a>
-            <a href="../Pages/allicat-sport.html"><span class="material-symbols-outlined">sports_soccer</span><p class="dropdown-context__text">Sport</p></a>
-            <a href="../Pages/allicat-science.html"><span class="material-symbols-outlined">science</span><p class="dropdown-context__text">Science</p></a>
-            <a href="../Pages/allitech.html"><span class="material-symbols-outlined">memory</span><p class="dropdown-context__text">Tech</p></a>
-            <a href="../Pages/allicat-eco.html"><span class="material-symbols-outlined">attach_money</span><p class="dropdown-context__text">Economy</p></a>
-            <a href="../Pages/allicat-world.html"><span class="material-symbols-outlined">public</span><p class="dropdown-context__text">World</p></a>
+<div class="navbar" id="myTopnav">
+    <a href="../Pages/allimain.html" title="News Alligator" class="navbar__link"><img src="../Assets/alligatorLogo.png" class="navbar__alligator-icon"></a>
+    <div class="navbar__drop">
+        <button class="navbar__drop__button" onclick="location.href = '../Pages/allicat-list.html'" style="cursor:pointer">Categories<span class="material-symbols-outlined" id="dropdown-arrow">arrow_drop_down</span></button>
+        <div class="navbar__drop__content">
+            <a href="../Pages/allicat-entertainment.html" class="navbar__drop__link"><span class="material-symbols-outlined">theater_comedy</span><p class="navbar__drop__content__text">Entertainment</p></a>
+            <a href="../Pages/allicat-sport.html" class="navbar__drop__link"><span class="material-symbols-outlined">sports_soccer</span><p class="navbar__drop__content__text">Sport</p></a>
+            <a href="../Pages/allicat-science.html" class="navbar__drop__link"><span class="material-symbols-outlined">science</span><p class="navbar__drop__content__text">Science</p></a>
+            <a href="../Pages/allitech.html" class="navbar__drop__link"><span class="material-symbols-outlined">memory</span><p class="navbar__drop__content__text">Tech</p></a>
+            <a href="../Pages/allicat-eco.html" class="navbar__drop__link"><span class="material-symbols-outlined">attach_money</span><p class="navbar__drop__content__text">Economy</p></a>
+            <a href="../Pages/allicat-world.html" class="navbar__drop__link"><span class="material-symbols-outlined">public</span><p class="navbar__drop__content__text">World</p></a>
         </div>
     </div>
-    <a href="#" style="float:right"><span class="material-symbols-outlined">account_circle</span><p class="dropdown-context__text" id="dropdown__username">User</p></a>
-    <a href="javascript:void(0);" class="icon" onclick="navBarFunction()"><span class="material-symbols-outlined">menu</span></a>
+    <a href="#" style="float:right" class="navbar__link"><span class="material-symbols-outlined">account_circle</span><p class="navbar__drop__content__text" id="dropdown__username">User</p></a>
+    <a href="javascript:void(0);" class="navbar__toggle-button" onclick="navBarFunction()"><span class="material-symbols-outlined">menu</span></a>
 </div>
 
 <div class="row">
