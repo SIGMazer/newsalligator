@@ -133,6 +133,57 @@ body {
     margin-top: 20px;
 }
 
+/*Headline classes*/
+
+.headline__container {
+    text-align: center;
+}
+
+.headline__slide img {
+    width: 75%;
+    border-radius: 16px;
+}
+
+.headline__slide {
+    display: none;
+}
+
+.headline__slide h2 {
+    margin-top: 2px;
+    font-size: xx-large;
+}
+
+.headline__selector {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #557B83;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.headline__selector:hover {
+    background-color: #39AEA9;
+}
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
 /*The halves of a news card*/
 .news-card__image-side {
     width: 30%;
@@ -231,6 +282,10 @@ body {
     .column-main, .column-side, .news-card__image-side, .news-card__description, .article-card__image-side, .article-card__info{
         width: 100%;
         padding: 0;
+    }
+    /*Headlines responsiveness*/
+    .headline__slide {
+        margin-left: 0;
     }
     /*Responsive navbar-class*/
     .navbar.responsive {position: relative;}
