@@ -38,6 +38,7 @@ pwShowHide.forEach(eyeIcon => {
 
 
 
+
 //sign up and login form + change title
 
 
@@ -94,7 +95,7 @@ form.addEventListener("submit", (e) => {
     if (pass.value.search(/[0-9]/) == -1) {
         message.push("Password must contain a number.");
     }
-    if (pass.value.search(/[!\@\#\$\%\^\&\*\(\)\-\_\=\+\\\/.\,\;\'\"\[\]{\}]/) == -1) {
+    if (pass.value.search(/[!\@\#\$\%\^\&\*\(\)\-\_\=\+\\\/.\,\;\'\"\[\]{\}\?\>\<\.\,\`\~]/) == -1) {
         message.push("Password must contain a special character.");
     }
 
@@ -123,6 +124,7 @@ form.addEventListener("submit", (e) => {
 })
 
 // login page
+
 
 
 
