@@ -54,26 +54,26 @@ body {
     background-color: #39AEA9;
 }
 
-ul {
+.devs--list {
     list-style-type: none;
     padding-left: 0;
 }
 
-ul img {
+.devs--img {
     border-radius: 50%;
     border: #253532 solid 2px;
     width: 10%;
     margin-right: 16px;
 }
 
-ul a {
+.devs--link {
     font-size: 14px;
     margin-left: 10px;
     text-decoration: none;
     color: #557B83;
 }
 
-ul a:hover {
+.devs--link:hover {
     color: #39AEA9;
 }
 
