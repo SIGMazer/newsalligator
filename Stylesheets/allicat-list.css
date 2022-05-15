@@ -233,12 +233,12 @@ img {
     max-height:100%;
     border-radius: 5%;
 }
-.catograph
+.cat__paragraph
 {
     min-width: 200px;
     min-height: 100px;
 }
-.cat-card {
+.cat__card {
     text-align: center;
     background-color: #F9FBF0;
     border-radius: 10px;
@@ -257,32 +257,32 @@ td {
     text-align: left;
 
 }
-.catlist{
+.cat__list{
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     float: top;
     table-layout: fixed;
 }
-.catlist a {
+.cat__list a {
     text-decoration: none;
     color: inherit;
 }
-.catlist h3 {
+.cat__list h3 {
     text-align: center;
     /*float: left;*/
     vertical-align:center;
     horiz-align: left;
 }
-.cat-card:hover {
+.cat__card:hover {
     background-color: #557B83;
     color: #F9FBF0;
     box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
 }
-.catitles {
+.cat__titles {
     font-size: 200%;
     /*float: snap;*/
 }
-.cat-pic {
+.cat__pic {
     width: 50%;
     height: 50%;
 }
