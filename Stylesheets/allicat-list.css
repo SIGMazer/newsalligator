@@ -233,11 +233,6 @@ img {
     max-height:100%;
     border-radius: 5%;
 }
-.cat__paragraph
-{
-    min-width: 200px;
-    min-height: 100px;
-}
 .cat__card {
     text-align: center;
     background-color: #F9FBF0;
